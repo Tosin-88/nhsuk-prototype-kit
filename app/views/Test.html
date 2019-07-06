@@ -1,0 +1,52 @@
+{% extends 'layout.html'%}
+
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+  <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+         <h1>
+             Sunny Title Page
+         </h1>
+         <figure>
+             <img src="/images/Sunny2.jpg" alt="An image of Sunny">
+             <figcaption class="nhsuk-image_caption">
+                 Sunny
+             </figcaption>
+         </figure>
+         <h2>Generic Sunny H2</h2>
+         <p class="nhsuk-body-1">
+             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, blanditiis illo, consequuntur est sunt quia praesentium beatae fugiat voluptatem dolorum quibusdam aliquam suscipit, excepturi odit quis nemo laudantium architecto ipsa.
+         </p>
+         <ul>
+             <li><a href="../index.html">Index Page</a></li>
+             <li><a href="layout.html">Layout Page Page</a></li>
+         </ul>
+         {{list({
+             "title": "Things to consider during summer",
+             "type": "tick",
+             "items": [
+               {
+                   "item": "Ensure you drink enough water"
+               },
+               {
+                   "item": "Ensure you add enough sun scream"
+               },
+               {
+                   "item": "Ensure you wear shades on bright days"
+               },
+               {
+                   "item": "Ensure you stay under shade e.g. Under Trees"
+               }
+             ]
+         })}}
+
+        {{warningCallout({"heading": "In case of sunburn", "HTML": "<p>If you have suffered from sunburn, it is very important you seek shade immediately.</p>"})}}
+      </div>
+  </div>
+{% endblock %}
