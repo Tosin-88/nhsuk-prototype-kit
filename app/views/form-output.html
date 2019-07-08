@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+
+{% block content %}
+<p>
+
+    {{warningCallout({"heading": "Welcome", 
+    "HTML": "<p>Welcome to our landing area {{ data['surname'] }} {{ data['firstname'] }}, we hope you find our array of services to your taste.</p>"})}}
+</p>
+
+
+{% endblock %}
+

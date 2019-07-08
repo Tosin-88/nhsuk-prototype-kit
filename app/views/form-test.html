@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+
+
+
+
+{% block beforeContent %}
+{% endblock %}
+
+{% block content %}
+<form action="form-output" method="post">
+        <div class="nhsuk-form-group">
+                <label class="nhsuk-label" for="input-with-hint-text">
+                  <h2> What is your name?</h2>
+                </label>
+                <span class="nhsuk-hint" id="input-with-hint-text-hint">
+                  <p>Please provide your surname e.g. Summers</p>
+                  
+                </span>
+                <input class="nhsuk-input nhsuk-input--width-20" id="surname" name="surname" type="text" aria-describedby="surname" placeholder=" Please enter surname">
+            
+                <span class="nhsuk-hint" id="input-with-hint-text-hint">
+                    <p>Please provide your first name and any other given name e.g.  Barbara May</p>
+                    
+                  </span>
+                <input class="nhsuk-input nhsuk-input--width-20" id="firstname" name="firstname" type="text" aria-describedby="firstname">
+              </div>
+            
+              <button class="nhsuk-botton" value="submit" type="submit">Output</button>
+</form>
+{% endblock %}
+
+
