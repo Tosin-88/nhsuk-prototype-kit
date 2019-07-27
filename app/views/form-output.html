@@ -2,11 +2,11 @@
 
 
 {% block content %}
-<p>
-
-    {{warningCallout({"heading": "Welcome", 
-    "HTML": "<p>Welcome to our landing area {{ data['surname'] }} {{ data['firstname'] }}, we hope you find our array of services to your taste.</p>"})}}
-</p>
+<div>
+  <p> Welcome {{data ['firstname']}} {{ data ['surname']}} to the NHS </p>
+    {{warningCallout({"heading": "Introductions to the NHSUK Prototype Kit", 
+    "HTML": "<p>This is our landing area {{ data['surname'] }} {{ data['firstname'] }}, we hope you find our array of services to your taste. Please do take your time to test out the suite of features on offer and upload your outcomes to our remote repository</p>"})}}
+</div>
 
 
 {% endblock %}
